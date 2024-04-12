@@ -4,5 +4,12 @@ services:
     build:
       context: .
     container_name: 'suggestions'
+    hostname: suggestions
     env_file:
       - .env
+    networks:
+            - main
+
+networks:
+        main:
+                name: main
