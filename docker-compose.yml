@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  suggestions:
+    build:
+      context: .
+    container_name: 'suggestions'
+    env_file:
+      - .env
