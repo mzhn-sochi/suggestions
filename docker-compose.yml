@@ -8,8 +8,8 @@ services:
     env_file:
       - .env
     networks:
-            - main
+      - main
 
 networks:
-        main:
-                name: main
+  main:
+    external: true
